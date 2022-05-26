@@ -61,4 +61,4 @@ Y los estilos `.css`:
 | Aplicación de `map` en PlatziBoard       | `18-map-PlatziBoard`       | Implementamos map en Platziboard                 |
 | Aplicación de `mergeAll` en PlatziBoard  | `22-mergeAll-PlatziBoard`  | Implementamos mergeAll en PlatziBoard            |
 | Aplicación de `takeUntil` en PlatziBoard | `24-takeUntil-PlatziBoard` | Implementamos takeUntil en PlatziBoard           |
-| Finalización de PlatziBoard              | `27--PlatziBoard`          | Realizamos los detalles finales para PlatziBoard |
+| Finalización de PlatziBoard              | `27-finalizacion-PlatziBoard`          | Realizamos los detalles finales para PlatziBoard |
