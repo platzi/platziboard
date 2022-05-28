@@ -8,6 +8,7 @@ import { fromEvent, merge } from "rxjs";
 import { map, mergeAll, takeUntil } from "rxjs/operators";
 
 const canvas = document.getElementById("reactive-canvas");
+const restartButton = document.getElementById("restart-button");
 
 const cursorPosition = { x: 0, y: 0 };
 
@@ -44,4 +45,18 @@ const startPaint$ = onMouseDown$.pipe(
   mergeAll()
 );
 
-startPaint$.subscribe(paintStroke);
+let startPaintSubscription = startPaint$.subscribe(paintStroke);
+
+const onLoadWindow$ = fromEvent(window, "load");
+const onRestartClick$ = fromEvent(restartButton, "click");
+
+// 🔀 Aquí fusionamos los observables onLoadWindow$ y onRestartClick$
+// Con esto podemos iniciar la pizarra cuando cargamos la página por primera vez o cuando damos un click
+// en el botón de Reiniciar.
+const restartWhiteboard$ = merge(onLoadWindow$, onRestartClick$);
+
+restartWhiteboard$.subscribe(() => {
+  startPaintSubscription.unsubscribe();
+  canvasContext.clearRect(0, 0, canvas.width, canvas.height);
+  startPaintSubscription = startPaint$.subscribe(paintStroke);
+});
