@@ -56,9 +56,11 @@ Y los estilos `.css`:
 
 ## Ramas disponibles del curso
 
-| **Clase**                                | **Rama**                   | **Cambio realizado**                             |
-| ---------------------------------------- | -------------------------- | ------------------------------------------------ |
-| Aplicación de `map` en PlatziBoard       | `18-map-PlatziBoard`       | Implementamos map en Platziboard                 |
-| Aplicación de `mergeAll` en PlatziBoard  | `22-mergeAll-PlatziBoard`  | Implementamos mergeAll en PlatziBoard            |
-| Aplicación de `takeUntil` en PlatziBoard | `24-takeUntil-PlatziBoard` | Implementamos takeUntil en PlatziBoard           |
-| Finalización de PlatziBoard              | `27-finalizacion-PlatziBoard`          | Realizamos los detalles finales para PlatziBoard |
+> 💻 Si estás estancado/a en el desarollo del proyecto también puedes utilizar el sistema de preguntas del curso. 😊 O también puedes revisar las ramas de las clases del curso.
+
+| **Clase**                                | **Rama**                      | **Cambio realizado**                             |
+| ---------------------------------------- | ----------------------------- | ------------------------------------------------ |
+| Aplicación de `map` en PlatziBoard       | `18-map-PlatziBoard`          | Implementamos map en Platziboard                 |
+| Aplicación de `mergeAll` en PlatziBoard  | `22-mergeAll-PlatziBoard`     | Implementamos mergeAll en PlatziBoard            |
+| Aplicación de `takeUntil` en PlatziBoard | `24-takeUntil-PlatziBoard`    | Implementamos takeUntil en PlatziBoard           |
+| Finalización de PlatziBoard              | `27-finalizacion-PlatziBoard` | Realizamos los detalles finales para PlatziBoard |
